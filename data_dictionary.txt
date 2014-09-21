@@ -1,0 +1,21 @@
+Users
+	1-30 - Anonymous user Id
+	
+LAYING
+	Average of all the sensore values (mean and standar deviation) when user is Laying
+	
+SITTING
+	Average of all the sensore values (mean and standar deviation) when user is Sitting
+	
+STANDING
+	Average of all the sensore values (mean and standar deviation) when user is Standing
+	
+WALKING
+	Average of all the sensore values (mean and standar deviation) when user is Walking
+	
+WALKING_DOWNSTAIRS
+	Average of all the sensore values (mean and standar deviation) when user is Walking downstairs
+	
+WALKING_UPSTAIRS
+	Average of all the sensore values (mean and standar deviation) when user is Walking upstaris
+	
