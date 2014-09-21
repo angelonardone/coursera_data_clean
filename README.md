@@ -71,7 +71,9 @@ new_data$Activities <- sapply(new_data$Activities,name_activities)
 
 ### now I create the tidy data
 library(reshape2)
+
 dataMelt <- melt(new_data,id=c("Users","Activities"))
+
 tidyData <- dcast(dataMelt, Users ~ Activities,mean)
 
 ### and finish daving the tidy data
