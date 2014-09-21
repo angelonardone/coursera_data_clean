@@ -82,5 +82,5 @@ dataMelt <- melt(new_data,id=c("Users","Activities"))
 
 tidyData <- dcast(dataMelt, Users ~ Activities,mean)
 
-### and finish daving the tidy data
+### and finish saving the tidy data
 write.table(tidyData,"tidy.txt",row.name=FALSE)
