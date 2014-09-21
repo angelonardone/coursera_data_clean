@@ -9,23 +9,29 @@ column_names <- c('Users','Activities',as.list(data_features[,2]))
 
 ### Now I load all the data in order, first the sensors, then the activity and then the users (for train)
 data_train = read.table('./train/X_train.txt', header = FALSE,stringsAsFactors = F)
+
 data_train_activity = read.table('./train/y_train.txt', header = FALSE,stringsAsFactors = F)
+
 subject_train = read.table('./train/subject_train.txt', header = FALSE,stringsAsFactors = F)
+
 ### here put them in on data frame
 data_train <- cbind(subject_train,data_train_activity,data_train)
 
 ### now the same fot the "test" data
 data_test = read.table('./test/X_test.txt', header = FALSE,stringsAsFactors = F)
+
 data_test_activity = read.table('./test/y_test.txt', header = FALSE,stringsAsFactors = F)
+
 subject_test = read.table('./test/subject_test.txt', header = FALSE,stringsAsFactors = F)
+
 data_test <- cbind(subject_test,data_test_activity,data_test)
 
 
 ##  here data is the full set (section 1)
 data <- rbind(data_train,data_test)
+
 ### now I add the column names
 colnames(data) <- column_names
-
 
 
 
